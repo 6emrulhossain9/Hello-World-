@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" role="img" aria-label="Hello World in Various Programming Languages">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1e2e"/>
+      <stop offset="100%" stop-color="#312b4a"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#89b4fa"/>
+      <stop offset="50%" stop-color="#f5c2e7"/>
+      <stop offset="100%" stop-color="#a6e3a1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="200" rx="16" fill="url(#bg)"/>
+
+  <!-- Bouncing terminal prompt -->
+  <g>
+    <text x="40" y="70" font-family="monospace" font-size="28" fill="#a6e3a1">$&gt;</text>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; 0 6; 0 0" dur="1.8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Animated title that fades in and shimmers -->
+  <text x="120" y="115" font-family="'Courier New', monospace" font-size="56" font-weight="bold" fill="url(#text)">
+    Hello World!
+    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.4;1" dur="2s" fill="freeze"/>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="122" y="155" font-family="'Courier New', monospace" font-size="20" fill="#cdd6f4">
+    In Various Programming Languages
+    <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="2.5s" fill="freeze"/>
+  </text>
+
+  <!-- Blinking cursor -->
+  <rect x="40" y="56" width="14" height="22" fill="#a6e3a1">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
